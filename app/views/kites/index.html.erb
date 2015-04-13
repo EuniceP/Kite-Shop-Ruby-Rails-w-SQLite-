@@ -1,0 +1,11 @@
+<h1>Today's Kites</h1>
+
+<ul>
+  <% @kites.each do |kite| %>
+    <li>
+      <strong> <%= kite.shape %></strong><%= kite.size %> inches  $<%= kite.price %>
+<%= link_to "More info", kite_path(kite) %>
+    </li>
+    <% end %>
+</ul>
+

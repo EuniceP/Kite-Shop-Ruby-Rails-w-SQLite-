@@ -1,0 +1,12 @@
+<h1> Edit this kite</h1>
+<%= form_for @kite do |f| %>
+
+  Shape: <%= f.text_field :shape %>
+  Size: <%= f.text_field  :size %>
+  Price: <%= f.text_field :price %>
+
+  <%= f.submit "Edit kites!" %>
+  
+<% end %>
+
+<%= link_to "Back to the list!", kites_path %>
